@@ -52,7 +52,6 @@ public:
 class Bird : public Feathered {
 public:
 	Bird(std::string name) : Feathered(name) {}
-	virtual ~Bird() {};
 
 	virtual void voice() = 0;
 };
