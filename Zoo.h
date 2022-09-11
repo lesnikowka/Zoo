@@ -6,7 +6,6 @@
 class Animal {
 public:
 	Animal(std::string name) : name_(name), id_(numberOfAnimals++) {}
-	virtual ~Animal() {}
 
 	std::string getName() { return name_; }
 
