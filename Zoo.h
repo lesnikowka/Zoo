@@ -85,14 +85,14 @@ public:
 	}
 
 	void voice() {
-		for (auto& el : animals_)
+		for (Animal* el : animals_)
 			el->voice();
 	}
 
 	int numberOfBirds() {
 		int count = 0;
 
-		for (auto& el : animals_)
+		for (Animal* el : animals_)
 			if (dynamic_cast<Bird*>(el)) count++;
 
 		return count;
