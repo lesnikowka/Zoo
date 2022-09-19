@@ -25,8 +25,6 @@ int Animal::numberOfAnimals = 0;
 class Mammal : public Animal {
 public:
 	Mammal(std::string name) : Animal(name) {}
-
-	virtual void voice() = 0;
 };
 
 
@@ -34,8 +32,6 @@ public:
 class Feathered : public Animal {
 public:
 	Feathered(std::string name) : Animal(name) {}
-
-	virtual void voice() = 0;
 };
 
 
@@ -53,7 +49,6 @@ class Bird : public Feathered {
 public:
 	Bird(std::string name) : Feathered(name) {}
 
-	virtual void voice() = 0;
 };
 
 
